@@ -1,0 +1,61 @@
+.rule-group {
+  position: relative;
+  padding: 0;
+  .rule-relation-wrap {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 72px;
+
+    .rule-group-line {
+      position: absolute;
+      top: 8px; // 26px;
+      bottom: 16px;
+      right: 15px;
+      width: 15px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid rgba(31, 56, 88, .4);
+      border-right: none;
+
+      &::before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        right: -6px;
+        top: -3px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        content: " ";
+        border: 1px solid rgba(31, 56, 88, .4);
+      }
+
+      &::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        right: -6px;
+        bottom: -3px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        content: " ";
+        border: 1px solid rgba(31, 56, 88, .4);
+      }
+    }
+
+    .rule-relation {
+      position: absolute;
+      top: calc(50% - 4px);
+      margin-top: -15px;
+    }
+  }
+
+  .rule-list-wrap {
+    padding-left: 92px;
+    .ant-pro-form-list {
+      margin-bottom: -26px;
+    }
+  }
+}
